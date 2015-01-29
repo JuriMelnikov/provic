@@ -1,0 +1,360 @@
+<!doctype html>
+<html>
+<HEAD>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+
+<TITLE>Офисные перегородки в Санкт-Петербурге (СПб). Стационарные,  универсальные, сантехнические,  мобильные, цельностеклянные перегородки в офис.</TITLE>
+<meta name="keywords" content="офисные перегородки, офисные перегородки Санкт-Петербург, офисные перегородки Петербург, офисные перегородки спб">
+<meta name="description" content="Офисные перегородки от компании Аркада в Санкт-Петербурге (СПб). Мы готовы предложить вам полный ассортимент систем офисных перегородок  для организации пространства от производителя с 15-ти летним опытом работы.">
+
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate, max-age=0">
+<link rel="shortcut icon" href="favicon.ico">
+
+<!-- <link rel="stylesheet" type="text/css" href="fonts/font.css"> -->
+<link href='http://fonts.googleapis.com/css?family=Cuprum:400,400italic,700,700italic&subset=latin,cyrillic,latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="stylesheet" type="text/css" href="opisanie.css">
+
+<script type="text/javascript" src="http://yandex.st/jquery/1.10.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.maskedinput.min.js"></script>
+<script type="text/javascript" src="js/jquery.num.js"></script>
+<script type="text/javascript" src="js/resize.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/slideshow.js"></script>
+
+<!-- COLORBOX -->
+<link type="text/css" media="screen" rel="stylesheet" href="colorbox.css" />
+<script type="text/javascript" src="colorbox_images/jquery.colorbox.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $("a[rel='foto_gallery']").colorbox({current: "{current} из {total}",previous: "предыдущая",next: "следующая",close: "закрыть"});
+    $("a[rel='foto_gallery1']").colorbox({current: "{current} из {total}",previous: "предыдущая",next: "следующая",close: "закрыть"});
+    $("a[rel='foto_gallery2']").colorbox({current: "{current} из {total}",previous: "предыдущая",next: "следующая",close: "закрыть"});
+  });
+</script>
+
+<script type="text/javascript" src="js/jquery.elevateZoom-2.5.5.min.js"></script>
+<script type="text/javascript">
+$(function()
+{
+  $("img[rel=zoom]").elevateZoom({
+    zoomType:"lens",
+    lensShape:"round",
+    lensSize: 200,
+    cursor:"crosshair"
+  });
+});
+</script>
+
+<style>
+div.bigpic{background:URL("bigpic/index.jpg") center center no-repeat white !important;}
+</style>
+
+</HEAD>
+
+<body>
+<div class="container"><div class="main">
+
+<div class="topline"></div>
+
+<div class="width">
+  <div class="head">
+    <div class="logo">
+        <a href="index.php" title="офисные перегородки"><span class="top"></span><h1>офисные перегородки</h1></a>
+    </div>
+
+    <div class="phone"><div class="icon"></div><span id="mobile_phone"><a style='text-decoration:none' href='tel:8123369545' title='Заказать офисные перегородки вы можете по телефону: (812) 336-95-45'><span class="code">(812)</span> 336 95 45</span></a>
+    </div>
+    <div class="phonetext">или попросите нас вам <a href="zvonok.php" title='Оставьте Ваш телефон и наш менеджер с Вами свяжется'>перезвонить</a></div>
+  </div>
+</div>
+
+<div class="grayline">
+  <div class="width wbigger">
+    <div class="bigpic"><style>
+  div.bigpic
+  {
+    background:URL("img/index/banner_1.jpg") center center no-repeat !important;
+    position:relative;
+    overflow:hidden;
+  }
+  
+div.bigpic img
+{
+  position:absolute;
+  top:0px;
+  left:0px;
+  opacity:0;
+}  
+
+</style>
+  
+  
+<script type=text/javascript>
+
+var pic_direction = 0; //0 - прямо, 1 - обратно
+var flag = 0;
+
+function BigPicResize()
+{
+    var imgs = $("div.bigpic img.g");
+    
+    var wh = $(window).width();
+    
+    if (wh < 1400)
+    {
+      var ww = 1400 / 2;
+      var www = wh/2;
+      var l = ww-www;
+      imgs.css("left","-" + l + "px");   
+      $("#bigpicline").css("left","-" + l + "px");
+    }
+    else
+    {
+      imgs.css("left","0px");
+      $("#bigpicline").css("left","8px");
+    }
+
+
+}
+
+$(function()
+{
+  $(window).resize(BigPicResize);
+  
+  BigPicResize();
+  
+  setInterval(function()
+  {
+    var imgs = $("div.bigpic img.g");
+    
+    BigPicResize();
+   
+    if (pic_direction == 0)
+    {    
+      for(var i=0;i<imgs.length;i++)
+      {
+        var img = $(imgs[i]);
+        
+        var o = img.css("opacity");
+        
+        if (o == 0)
+        {
+          img.animate({opacity: 1}, 1000);
+          
+          if (i == imgs.length - 1)
+          {
+            pic_direction = 1;
+          }
+          
+          return;
+        }
+      }
+    }
+    else
+    {
+      if (flag == 0)
+      {
+        flag = 1;
+        setTimeout(function()
+        {
+          $("div.bigpic img.g").animate({opacity: 0}, 500);
+          pic_direction = 0;
+          flag = 0;
+        },4000);
+      }
+    }    
+  
+  },900);
+});
+
+</script>
+   
+  <img class="g" src="img/index/banner_2.jpg">
+  <img class="g" src="img/index/banner_3.jpg">
+  <img class="g" src="img/index/banner_4.jpg">
+  <img class="g" src="img/index/banner_5.jpg">
+  <img class="g" src="img/index/banner_6.jpg">
+  <img class="g" src="img/index/banner_7.jpg">
+  <img class="g" src="img/index/banner_8.jpg">
+  <img class="g" src="img/index/banner_8.jpg">
+  <img class="g" src="img/index/banner_8.jpg">
+  <img class="g" src="img/index/banner_8.jpg">
+  <img class="g" src="img/index/banner_10.jpg">
+  <img id="bigpicline" style="opacity:1;bottom:0;top:auto;left:8px;" src="img/bigpic_text2.png"></div>
+  </div>
+</div>
+
+<div class="menuline">
+<div class="width wbigger nobackground">
+<div class="width">
+
+<div class="menu">
+
+<ul>
+  <li><a class="_m1" href="company.php">О КОМПАНИИ</a>
+
+<ul class="sub">
+      <li class="last"><a href="preimuschestva.php">Наши преимущества</a></li>
+    </ul>
+</li>
+
+
+
+  <li><a class="_m2" href="products.php">КАТАЛОГ ПРОДУКЦИИ</a>
+    <ul class="sub">
+      <li class="no_after"><a href="premium.php">Стационарные перегородки PREMIUM</a></li>
+      <li class="no_after"><a href="modul.php">Универсальные перегородки MODUL</a></li>
+      <li><a href="mobile.php">Мобильные перегородки MOBY LINE</a></li>
+      <li><a href="glass.php">Цельностеклянные перегородки GLASS LINE</a></li>
+      <li><!--noindex--><noindex><a target=_blank rel="nofollow" href="http://glassfire.net/">Противопожарное остекление FIRE LINE</a></noindex><!--/noindex--></li>
+      <li><a href="comfort.php">Сантехнические перегородки COMFORT LINE</a></li>
+      <li class="arrow"><a href="woodline_liner.php">Облицовка стен</a>
+        <ul class="subsub">
+          <li><a href="liner.php">Система облицовки стен LINER</a></li>
+          <li class="no_after"><a href="woodline.php">Система стеновых панелей WOOD LINE</a></li>
+        </ul>
+      </li>
+      <li><!--noindex--><noindex><a target=_blank rel="nofollow" href="http://glass-facade.ru/">Наружное остекление FACADE LINE</a></noindex><!--/noindex--></li>
+      <li><a href="doors.php">Двери</a></li>
+      <li class="last"><a href="materials.php">Материалы</a></li>
+    </ul>
+  </li>
+  <li><a class="_m3" href="productions.php">НАШЕ ПРОИЗВОДСТВО</a></li>
+  <li><a class="_m4" href="objects.php">НАШИ ОБЪЕКТЫ И ОТЗЫВЫ</a></li>
+  <li><a class="_m5" href="clients.php">КЛИЕНТЫ</a></li>
+  <li><a class="_m6" href="contacts.php">КОНТАКТЫ</a></li>
+  <li><a class="_m7" href="online.php">ЗАКАЗ ONLINE</a></li>
+</ul>
+
+</div>
+
+</div>
+</div>
+</div>
+
+
+<div class="width">
+  <div class="icons"><span class="whereami"></span><a href="map.php" title="Карта сайта"><img src="img/map.png"></a></div>
+
+    <div class="items" align=center>
+    <div class="item item1"><div class="color"><a href="premium.php" title="Стационарные перегородки «PREMIUM»"></a><div class="color1"></div></div>
+      <div class="price">от 2 140 р.<br>за кв.м.</div>
+      <div class="name"><a href="premium.php">СТАЦИОНАРНЫЕ<br>ПЕРЕГОРОДКИ<br><span class="title">Premium</span></a></div>
+      <div class="text lh">Система на алюминиевом профиле помогжет<br>разграничить пространство офиса на<br>рабочие зоны, создать отдельные кабинеты<br>для сотрудников и руководителей.</div>
+    </div><div class="item item2"><div class="color"><a href="modul.php" title="Универсальные перегородки «MODUL»"></a><div class="color2"></div></div>
+      <div class="price">от 1 630 р.<br>за кв.м.</div>
+      <div class="name"><a href="modul.php">УНИВЕРСАЛЬНЫЕ<br>ПЕРЕГОРОДКИ<br><span class="title">Modul</span></a></div>
+      <div class="text lh">Легко монтируются и снимаются при<br>необходимости. Перегородки Modul позволяют<br>создавать стены высотой до 4.5 м, могут<br>устанавливаться с любыми дверьми.</div>
+    </div><div class="item item3"><div class="color"><a href="mobile.php" title="Мобильные перегородки «MOBY LINE»"></a><div class="color3"></div></div>
+      <div class="price">от 1 090 р.<br>за кв.м.</div>
+      <div class="name"><a href="mobile.php">МОБИЛЬНЫЕ<br>ПЕРЕГОРОДКИ<br><span class="title">Moby Line</span></a></div>
+      <div class="text lh">Позволяют создавать стены до 2,5 метров.<br>Подходят для создания отдельных рабочих<br>мест сотрудников. Предусмотрена<br>установка дверей различного типа.</div>
+    </div><div class="item item4"><div class="color"><a href="glass.php" title="Цельностеклянные перегородки «GLASS LINE»"></a><div class="color4"></div></div>
+<div class="price">от 3 980 р.<br>за кв.м.</div>
+      <div class="name"><a href="glass.php">ЦЕЛЬНОСТЕКЛЯННЫЕ<br>ПЕРЕГОРОДКИ<br><span class="title">Glass Line</span></a></div>
+      <div class="text lh">Изысканные и легкие стеклянные перегородки<br>зрительно увеличивают офисное пространство.<br>Используются при оформлении офисов,<br>торговых центров, выставочных стендов.</div>
+    </div><div class="item item5"><div class="color"><!--noindex--><noindex><a target=_blank rel="nofollow" href="http://glassfire.net/" title="Противопожарное остекление «FIRE LINE»"></a></noindex><!--/noindex--><div class="color5"></div></div>
+      <div class="price">от 9 900 р.<br>за кв.м.</div>
+      <div class="name"><!--noindex--><noindex><a rel="nofollow" target=_blank href="http://glassfire.net/">ПРОТИВОПОЖАРНОЕ<br>ОСТЕКЛЕНИЕ<br><span class="title">Fire Line</span></a></noindex><!--/noindex--></div>
+      <div class="text lh">Основная функция противопожарных<br>перегородок - не дать огню выйти за<br>пределы помещения, локализовать очаг<br>возгорания.</div>
+    </div><div class="item item6"><div class="color"><a href="woodline.php" title="Отделка стен «WOOD LINE»"></a><div class="color6"></div></div>
+      <div class="name"><a href="woodline.php">ОБЛИЦОВКА СТЕН<br><span class="title">Wood Line</span></a></div>
+      <div class="text lh"><br>Чистовая отделка стен с помощью панелей<br>гипсовинил в комбинации с декоративными<br>алюминиевыми профилями или деревянных панелей.</div>
+    </div><div class="item item7"><div class="color"><a href="comfort.php" title="Сантехнические перегородки «COMFORT LINE»"></a><div class="color7"></div></div>
+      <div class="name"><a href="comfort.php">САНТЕХНИЧЕСКИЕ<br>ПЕРЕГОРОДКИ<br><span class="title">Comfort Line</span></a></div>
+      <div class="text lh">Используются в душевых комнатах<br>и туалетах. Прочные и надежные<br>они прослужат вам очень долго.</div>
+    </div><div class="item item8"><div class="color"><!--noindex--><noindex><a rel="nofollow" href="http://glass-facade.ru/" target=_blank title="Наружное остекление «FACADE LINE»"></a></noindex><!--/noindex--><div class="color8"></div></div>
+      <div class="name"><!--noindex--><noindex><a rel="nofollow" href="http://glass-facade.ru/" target=_blank>НАРУЖНОЕ ОСТЕКЛЕНИЕ<br><span class="title">Facade Line</span></a></noindex><!--/noindex--></div>
+      <div class="text lh">Индивидуальное архитектурное<br>проектирование конструкций на<br>алюминиевом профиле, для остекления<br>витражей жилых и промышленных зданий</div>
+    </div><div class="item item9"><div class="color"><a href="doors.php" title="ДВЕРИ"></a><div class="color9"></div></div>
+      <div class="name"><a href="doors.php">ДВЕРИ</a></div>
+      <div class="text lh">Двери различных видов и назначения применяемые как в системах перегородок, так и в отдельных проёмах.</div>
+    </div><div class="item item10"><div class="color"><a href="materials.php" title="МАТЕРИАЛЫ"></a><div class="color10"></div></div>
+      <div class="name"><a href="materials.php">МАТЕРИАЛЫ</a></div>
+      <div class="text lh"></div>
+    </div>
+  </div>
+
+  <div class="redline"></div>
+  
+  <div class="content content_main">
+    <div class="left">
+      <div class="short_header red"><div>Акции!</div></div>
+      <ul class="actions">
+        <li><span><strong style="color: red">Скидки 30%</strong> <a style="color: black" href="products.php" class="main_context">на все виды офисных перегородок</a>!</span></li>
+<li><span><strong>При заказе от 700 тыс. руб.</strong> доставка и установка<br />
+<a href="products.php" title="Заказав офисные перегородки от 700 тыс. руб. доставку и установку Вы получаете в подарок.">в подарок!</a></span></li>
+
+      </ul>
+      <div class="short_header short_header_2"><div>Новости</div></div>
+      <div class="news_item">
+        <div class="date">
+14 ноября 2013 г.
+</div>
+<div class="text">
+В новый офис сети гипермаркетов &laquo;Лента&raquo; нашими специалистами установлены перегородки системы &laquo;PREMIUM&raquo;. <a href="lenta.php" title="Все наши работы Вы можете посмотреть в разделе наши объекты.">Фотографии.</a>
+</div>
+
+      </div>
+      <div class="short_header short_header_2"><div>Статьи</div></div>
+      <div class="article">
+Современный человек много времени проводит на<br />
+ работе. Офис &ndash; это практически второй дом для нас.<br />
+ Организация офисного пространства чрезвычайно важна.<br />
+ <a href="item.php" title="Возможна данная информация об офисных перегородках Вам будет полезна.">Читать далее.</a>
+</div>
+  
+  
+    </div>
+    <div class="right" style="text-align:justify;">
+      <div class="header">Краткая информация о компании и продукции:</div>
+     <div class=lh><a href="company.php" class="main_context">Компания &laquo;Аркада&raquo;</a> предлагает различные виды и типы <a href="index.php" class="main_context"><b class=nb>офисных перегородок</b></a>, которые помогут вам организовать офисное пространство вашей компании. У нас существуют решения на любой вкус: воздушные, изысканные, невесомые <a href="glass.php" class="main_context">стеклянные перегородки Glass Line</a>, которые подарят изыск и стильность вашему офису, и создадут ощущение простора и открытости; универсальные <a href="modul.php" class="main_context">перегородки MODUL</a>, которые помогут вам комфортно организовать офисное пространство, и легко изменить его в соответствии с потребностями; <a href="premium.php" class="main_context">стационарные перегородки Premium</a>, которые дарят неограниченные возможности планировки (ознакомьтесь с <a href="office_septas.php" class="main_context">исследованиями рынка <i class=nb>офисных перегородок</i></a>), и конкурентную стоимость. Управляйте пространством по собственному желанию!</div><br>
+      <div class=lh><a href="office_septa.php" class="main_context">Наша компания</a> является не просто поставщиком в офисы, но и производителем, поэтому наши цены существенно ниже. В соответствии с вашими потребностями мы предлагаем широкий выбор перегородок для организации офисного пространства: стационарные, универсальные, стеклянные.</div><br><div style="height:5px;"></div>
+      <span style="color:red;font-weight:bold;">Существуют перегородки нескольких типов в офис:</span><br><br>
+      <span style="font-style: italic;">
+      <span style="font-weight: bold;font-style: italic;">Стационарные</span> — перегородки этого типа крепятся к полу и потолку в офисе, позволяют создавать стены высотой до 6 метров;<br><br>
+      <div class=lh><span style="font-weight: bold;font-style: italic;">Мобильные</span> – используются в основном для разграничения рабочих мест сотрудников в офисе 
+и создания системы <br>Open Space (открытое пространство). Позволяют эффективно использовать офисное пространство.</div><br>
+      <span style="font-weight: bold;font-style: italic;">Универсальные</span> – облегченный тип стационарных перегородок, легко монтируются и демонтируются. <br><br>
+<div class=lh>      <span style="font-weight: bold;font-style: italic;">Стеклянные (Цельностлянные)</span> – перегородки с большой площадью
+остекления, используется <br>только каленое стекло высокой прочности, что гарантирует долгий срок службы.</div><br>
+<div class=lh>      <strong class=nb>Офисные перегородки в СПБ</strong> решают любую проблему организации рабочего пространства, к тому же легко снимаются при переезде. О том, <a href="choice_office_septa.php" title="Как выбрать офисные перегородки" class="main_context">как правильно <b class=nb>подобрать офисные перегородки в Санкт-Петербурге</b></a> вы можете прочитать нашей краткой <a class="main_context" href="company.php">статье</a>.</div>
+    </div>
+    <div class="clear"></div>
+  </div>
+</div>
+
+<div class="footer">
+  <div class="shadow"></div>
+  <div class="width">
+    <a class="logo" href="index.php" title='Аркада - офисные перегородки'>&nbsp;</a>
+    <div class="address"><span class="big">ООО &laquo;Аркада строй&raquo;</span><br>г. Санкт-Петербург, Московский проспект 111,<br>(м. Московские ворота), 4 этаж, офисы 401-402.<br>Тел: +7 812 336 94 45, факс: +7 812 339 95 45<br><br><br>2007-2014 &copy; Аркада</div>
+<!-- Разработка и продвижение сайта компания "ДНК" -  www.dnkgroup.com -->
+    <div class="links">
+      <table>
+        <tr><td><a href="premium.php">Cтационарные перегородки Premium</a></td><td><a href="modul.php">Универсальные перегородки Modul</a></td></tr>
+        <tr><td><a href="mobile.php">Мобильные перегородки Moby Line</a></td><td><a href="glass.php">Цельностеклянные перегородки Glass Line</a></td></tr>
+        <tr><td><a href="fire.php">Противопожарное остекление Fire Line</a></td><td><a href="woodline.php">Внутренняя отделка Wood Line</a></td></tr>
+        <tr><td><a href="comfort.php">Сантехнические перегородки Comfort Line</a></td><td><a href="facade.php">Наружное остекление Facade Line</a></td></tr>
+        <tr><td><a href="doors.php">Двери</a></td><td><a href="materials.php">Материалы</a></td></tr>
+      </table>
+    </div>
+  </div>
+</div>
+
+<!-- Yandex.Metrika counter -->
+<script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+<script type="text/javascript">
+try { var yaCounter1009299 = new Ya.Metrika({id:1009299,
+          clickmap:true});}
+catch(e) { }
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/1009299" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+</div></div>
+
+</body></html>
+    

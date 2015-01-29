@@ -1,0 +1,4 @@
+services:
+#    jvm_provic.example:
+#        class: Jvm\ProvicBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]
